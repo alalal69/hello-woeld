@@ -1,35 +1,7 @@
-{
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "name": "(gdb) Windows 연결의 Bash",
-            "type": "cppdbg",
-            "request": "attach",
-            "program": "프로그램 이름 입력(예: ${workspaceFolder}/a.exe)",
-            "processId": "${command:pickRemoteProcess}",
-            "pipeTransport": {
-                "debuggerPath": "/usr/bin/gdb",
-                "pipeProgram": "${env:windir}\\system32\\bash.exe",
-                "pipeArgs": ["-c"],
-                "pipeCwd": ""
-            },
-            "setupCommands": [
-                {
-                    "description": "gdb에 자동 서식 지정 사용",
-                    "text": "-enable-pretty-printing",
-                    "ignoreFailures": true
-                }
-            ]
-        },
-        {
-            "type": "chrome",
-            "request": "launch",
-            "name": "Launch Chrome against localhost",
-            "url": "http://localhost:8080",
-            "webRoot": "${workspaceFolder}"
-        }
-    ]
-}
+var frm = document.certForm;
+frm.target ="skmns";
+frm.action = "https://dev-login.visitkorea.or.kr/partner/sns/cert.do";
+frm.method ="post";
+window.name = "skmnsPopup";
+window.open("", "skmns" , "height=680, width=500, titlebar=no,fullscreen=no,toolbar=no,location=no,status=no,menubar=no,scrollbars=no,resizable=no,left=150,top=50" ); //popup 옵션은 예시로, 환경에 맞게 수정이 필요합니다.
+frm.submit()

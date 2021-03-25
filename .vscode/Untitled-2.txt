@@ -1,0 +1,8 @@
+POST https://dev-tourif.sktcoupon.co.kr/partner/coupon/v1/issue.json
+{
+    "ci": "A",
+    "checkIn": "20210320",
+    "cpType": "20T",
+    "payAmt": 30000,
+    "goodsNm": "테스트 숙소"
+}
